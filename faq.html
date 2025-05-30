@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Ingetest SpA</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background SVG -->
+    <svg class="scroll-bg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#004080;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#001f40;stop-opacity:0.5" />
+            </linearGradient>
+        </defs>
+        <path class="wave1" fill="url(#grad1)" d="M0,200 Q250,150 500,200 T1000,200 V1000 H0 Z" />
+        <path class="wave2" fill="url(#grad1)" d="M0,300 Q250,250 500,300 T1000,300 V1000 H0 Z" />
+        <path class="wave3" fill="url(#grad1)" d="M0,400 Q250,350 500,400 T1000,400 V1000 H0 Z" />
+    </svg>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a href="index.html" class="navbar-brand font-weight-bold">Ingetest SpA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros/index.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header text-white py-5 position-relative" style="background: linear-gradient(rgba(27, 54, 93, 0.8), rgba(27, 54, 93, 0.9)), url('img/page-header-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="py-4">
+                        <h1 class="display-4 mb-4">Preguntas Frecuentes</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="index.html" class="text-white">Inicio</a></li>
+                                <li class="breadcrumb-item active text-white" aria-current="page">Preguntas frecuentes</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="faq-sidebar sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h4 mb-4">Índice</h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#servicios" class="text-decoration-none text-navy">Servicios</a></li>
+                                    <li class="mb-2"><a href="#nuestro-personal" class="text-decoration-none text-navy">Nuestro personal</a></li>
+                                    <li class="mb-2"><a href="#tecnologia" class="text-decoration-none text-navy">Tecnología</a></li>
+                                    <li class="mb-2"><a href="#calidad-y-seguridad" class="text-decoration-none text-navy">Calidad y seguridad</a></li>
+                                    <li class="mb-2"><a href="#proceso-de-trabajo" class="text-decoration-none text-navy">Proceso de trabajo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div id="servicios" class="mb-5">
+                        <h2 class="display-6 mb-4">Servicios</h2>
+                        <div class="accordion" id="accordionServicios">
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        ¿Qué servicios ofrecen?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Ofrecemos una variedad de servicios de ensayos no destructivos, incluyendo inspección visual, ultrasonido, radiografía industrial, pruebas de partículas magnéticas y más. Nos aseguramos de utilizar las técnicas más avanzadas para obtener resultados precisos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        ¿Ofrecen una cotización gratuita y sin compromiso?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Sí, ofrecemos cotizaciones gratuitas y sin compromiso para todos nuestros servicios. Simplemente contáctanos y uno de nuestros especialistas te proporcionará una evaluación detallada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        ¿En qué tipos de proyectos se especializan?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Nos especializamos en proyectos de diversos sectores, incluyendo la industria petroquímica, aeroespacial, construcción, manufactura y energía. Adaptamos nuestras soluciones a las necesidades específicas de cada cliente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        ¿Cómo puedo iniciar un proyecto con su empresa?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionServicios">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Iniciar un proyecto con nosotros es sencillo. Puedes contactarnos a través de nuestro sitio web, por teléfono o correo electrónico. Uno de nuestros representantes se pondrá en contacto contigo para discutir tus necesidades y cómo podemos ayudarte.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="nuestro-personal" class="mb-5">
+                        <h2 class="display-6 mb-4">Nuestro personal</h2>
+                        <div class="accordion" id="accordionPersonal">
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal1">
+                                        ¿Qué cualificaciones tienen sus técnicos?
+                                    </button>
+                                </h3>
+                                <div id="collapsePersonal1" class="accordion-collapse collapse show" data-bs-parent="#accordionPersonal">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Todos nuestros técnicos están altamente calificados y cuentan con certificaciones internacionales en diversas técnicas de ensayos no destructivos. La formación continua es una parte integral de nuestro compromiso con la excelencia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal2">
+                                        ¿Proveen capacitación a su personal?
+                                    </button>
+                                </h3>
+                                <div id="collapsePersonal2" class="accordion-collapse collapse" data-bs-parent="#accordionPersonal">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Sí, proporcionamos capacitación continua a nuestro personal para garantizar que estén al día con las últimas tecnologías y metodologías en ensayos no destructivos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal3">
+                                        ¿Cuántos años de experiencia tiene su equipo?
+                                    </button>
+                                </h3>
+                                <div id="collapsePersonal3" class="accordion-collapse collapse" data-bs-parent="#accordionPersonal">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Nuestro equipo cuenta con más de 20 años de experiencia combinada en la industria de ensayos no destructivos, lo que nos permite ofrecer un conocimiento profundo y una perspectiva única en cada proyecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal4">
+                                        ¿Cómo aseguran la calidad de su trabajo?
+                                    </button>
+                                </h3>
+                                <div id="collapsePersonal4" class="accordion-collapse collapse" data-bs-parent="#accordionPersonal">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Aseguramos la calidad de nuestro trabajo mediante estrictos controles de calidad, auditorías internas y el uso de equipos de última generación. Además, seguimos las mejores prácticas y estándares internacionales en todos nuestros procesos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tecnologia" class="mb-5">
+                        <h2 class="display-6 mb-4">Tecnología</h2>
+                        <div class="accordion" id="accordionTecnologia">
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTec1">
+                                        ¿Qué equipos utilizan para los ensayos no destructivos?
+                                    </button>
+                                </h3>
+                                <div id="collapseTec1" class="accordion-collapse collapse show" data-bs-parent="#accordionTecnologia">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Utilizamos equipos de última generación, incluyendo sistemas de ultrasonido avanzados, radiografía digital, equipos de partículas magnéticas y más. Esto nos permite ofrecer resultados precisos y confiables.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTec2">
+                                        ¿Cómo se aseguran de utilizar la tecnología más avanzada?
+                                    </button>
+                                </h3>
+                                <div id="collapseTec2" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologia">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Nos mantenemos actualizados con las últimas innovaciones en la industria mediante la participación en conferencias, talleres y colaboraciones con líderes tecnológicos. Esto garantiza que siempre usemos la tecnología más avanzada disponible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTec3">
+                                        ¿Ofrecen servicios de inspección remota?
+                                    </button>
+                                </h3>
+                                <div id="collapseTec3" class="accordion-collapse collapse" data-bs-parent="#accordionTecnologia">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Sí, ofrecemos servicios de inspección remota utilizando tecnologías avanzadas que permiten realizar evaluaciones detalladas sin la necesidad de presencia física en el sitio. Esto es ideal para proyectos en ubicaciones difíciles o peligrosas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="calidad-y-seguridad" class="mb-5">
+                        <h2 class="display-6 mb-4">Calidad y seguridad</h2>
+                        <div class="accordion" id="accordionCalidad">
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalidad1">
+                                        ¿Qué certificaciones tienen?
+                                    </button>
+                                </h3>
+                                <div id="collapseCalidad1" class="accordion-collapse collapse show" data-bs-parent="#accordionCalidad">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Contamos con certificaciones internacionales y cumplimos con los estándares más rigurosos de la industria. Nuestro personal está certificado en múltiples niveles y métodos de ensayos no destructivos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalidad2">
+                                        ¿Cómo garantizan la seguridad en el trabajo?
+                                    </button>
+                                </h3>
+                                <div id="collapseCalidad2" class="accordion-collapse collapse" data-bs-parent="#accordionCalidad">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">La seguridad es nuestra prioridad número uno. Implementamos rigurosos protocolos de seguridad, proporcionamos equipos de protección personal y realizamos evaluaciones de riesgos antes de cada proyecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="proceso-de-trabajo" class="mb-5">
+                        <h2 class="display-6 mb-4">Proceso de trabajo</h2>
+                        <div class="accordion" id="accordionProceso">
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProceso1">
+                                        ¿Cuál es su proceso de trabajo?
+                                    </button>
+                                </h3>
+                                <div id="collapseProceso1" class="accordion-collapse collapse show" data-bs-parent="#accordionProceso">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">Nuestro proceso comienza con una evaluación inicial de las necesidades del cliente, seguida de una planificación detallada, ejecución precisa de los ensayos, análisis de resultados y entrega de informes completos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 shadow-sm mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProceso2">
+                                        ¿Cuánto tiempo toma completar un proyecto?
+                                    </button>
+                                </h3>
+                                <div id="collapseProceso2" class="accordion-collapse collapse" data-bs-parent="#accordionProceso">
+                                    <div class="accordion-body">
+                                        <p class="mb-0">El tiempo de ejecución varía según el alcance y complejidad del proyecto. Trabajamos eficientemente para cumplir con los plazos establecidos sin comprometer la calidad de nuestro trabajo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>Ingetest SpA</h4>
+                    <p>Empresa líder en servicios de Ensayos No Destructivos</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="mb-0">&copy; 2024 Ingetest SpA. Todos los derechos reservados.</p>
+                    <a href="faq.html" class="text-white text-decoration-none">Preguntas frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

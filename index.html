@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingetest SpA - Ensayos No Destructivos</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical carousel images -->
+    <link rel="preload" as="image" href="img/hero/hero-1_large.webp" type="image/webp" media="(min-width: 1200px)">
+    <link rel="preload" as="image" href="img/hero/hero-1_large.jpg" type="image/jpeg" media="(min-width: 1200px)">
+    <link rel="preload" as="image" href="img/hero/hero-1_medium.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1199px)">
+    <link rel="preload" as="image" href="img/hero/hero-1_medium.jpg" type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)">
+    <link rel="preload" as="image" href="img/hero/hero-1_small.webp" type="image/webp" media="(max-width: 767px)">
+    <link rel="preload" as="image" href="img/hero/hero-1_small.jpg" type="image/jpeg" media="(max-width: 767px)">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background SVG -->
+    <svg class="scroll-bg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#004080;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#001f40;stop-opacity:0.5" />
+            </linearGradient>
+        </defs>
+        <path class="wave1" fill="url(#grad1)" d="M0,200 Q250,150 500,200 T1000,200 V1000 H0 Z" />
+        <path class="wave2" fill="url(#grad1)" d="M0,300 Q250,250 500,300 T1000,300 V1000 H0 Z" />
+        <path class="wave3" fill="url(#grad1)" d="M0,400 Q250,350 500,400 T1000,400 V1000 H0 Z" />
+    </svg>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand font-weight-bold">Ingetest SpA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide">
+                        <div class="overlay"></div>
+                        <picture>
+                            <source srcset="img/hero/hero-1_large.webp" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="img/hero/hero-1_large.jpg" media="(min-width: 1200px)" type="image/jpeg">
+                            <source srcset="img/hero/hero-1_medium.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/hero/hero-1_medium.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="img/hero/hero-1_small.webp" type="image/webp">
+                            <img src="img/hero/hero-1_small.jpg" class="d-block w-100" alt="Estructuras mineras" loading="eager">
+                        </picture>
+                        <div class="carousel-caption">
+                            <h3 class="animate__animated animate__fadeInUp">Bienvenido a Ingetest SpA</h3>
+                            <h1 class="animate__animated animate__fadeInUp">Innovación en Ensayos No Destructivos</h1>
+                            <p class="animate__animated animate__fadeInUp">Soluciones avanzadas para la inspección y análisis de materiales sin comprometer su integridad.</p>
+                            <a href="#services" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">
+                                Nuestros Servicios
+                                <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide">
+                        <div class="overlay"></div>
+                        <picture>
+                            <source srcset="img/hero/hero-2_large.webp" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="img/hero/hero-2_large.jpg" media="(min-width: 1200px)" type="image/jpeg">
+                            <source srcset="img/hero/hero-2_medium.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/hero/hero-2_medium.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="img/hero/hero-2_small.webp" type="image/webp">
+                            <img src="img/hero/hero-2_small.jpg" class="d-block w-100" alt="Equipos movimiento tierra" loading="lazy">
+                        </picture>
+                        <div class="carousel-caption">
+                            <h3 class="animate__animated animate__fadeInUp">Garantía de calidad en cada inspección</h3>
+                            <h1 class="animate__animated animate__fadeInUp">Seguridad y precisión en cada evaluación</h1>
+                            <p class="animate__animated animate__fadeInUp">Detectamos fallas ocultas y optimizamos el rendimiento de estructuras y componentes industriales.</p>
+                            <a href="#contact" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">
+                                Contáctanos
+                                <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide">
+                        <div class="overlay"></div>
+                        <picture>
+                            <source srcset="img/hero/hero-3_large.webp" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="img/hero/hero-3_large.jpg" media="(min-width: 1200px)" type="image/jpeg">
+                            <source srcset="img/hero/hero-3_medium.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/hero/hero-3_medium.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="img/hero/hero-3_small.webp" type="image/webp">
+                            <img src="img/hero/hero-3_small.jpg" class="d-block w-100" alt="Equipamiento especializado" loading="lazy">
+                        </picture>
+                        <div class="carousel-caption">
+                            <h3 class="animate__animated animate__fadeInUp">Compromiso y experiencia a su servicio</h3>
+                            <h1 class="animate__animated animate__fadeInUp">Equipamiento especializado</h1>
+                            <p class="animate__animated animate__fadeInUp">Nuestros expertos trabajan en conjunto para brindarle inspecciones precisas y soluciones confiables en Ensayos No Destructivos.</p>
+                            <a href="nosotros/filosofia-calidad.html" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">
+                                Nuestra Filosofía
+                                <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image">
+                        <picture>
+                            <source srcset="img/about/about-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="img/about/about-1.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="img/about/about-1_mobile.webp" type="image/webp">
+                            <img src="img/about/about-1_mobile.jpg" alt="Sobre nosotros" class="img-fluid rounded shadow" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content ps-lg-4">
+                        <h3 class="text-primary mb-3 text-start">Ingetest SpA</h3>
+                        <h2 class="display-5 mb-4 text-start">Profesionalismo y pasión</h2>
+                        <p class="lead mb-4 text-start">Los objetivos de la calidad de la compañía están definidos para proveer un alto estándar en nuestros servicios al cliente, asegurando que todos cumplan con los requerimientos especificados en cada proyecto.</p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>Servicios integrales y tecnología vanguardista</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>Informes detallados en las evaluaciones</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                <span>Compromiso y fidelidad con el cliente</span>
+                            </li>
+                        </ul>
+                        <div class="button-group">
+                            <a href="nosotros/filosofia-calidad.html" class="btn btn-primary btn-lg px-4 hover-outline">
+                                <i class="bi bi-book"></i>
+                                <span>Conoce nuestra filosofía de calidad</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="text-primary">Ensayos No Destructivos</h3>
+                <h2 class="display-5">Nuestros Servicios</h2>
+                <p class="lead">Nuestro departamento presta los servicios de ensayos no destructivos en los principales métodos convencionales.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <picture>
+                            <source srcset="img/services/ultrasonido_large.webp" type="image/webp">
+                            <img src="img/services/ultrasonido_large.jpg" class="card-img-top" alt="Ultrasonido" loading="lazy">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Ultrasonido</h3>
+                            <p class="card-text">Examen donde se utilizan ondas ultrasónicas en la cual es posible detectar fallas internas en materiales.</p>
+                            <a href="services/ultrasonido.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <picture>
+                            <source srcset="img/services/particulas-magneticas_large.webp" type="image/webp">
+                            <img src="img/services/particulas-magneticas_large.jpg" class="card-img-top" alt="Partículas Magnéticas" loading="lazy">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Partículas Magnéticas</h3>
+                            <p class="card-text">Método que permite detectar discontinuidades superficiales y subsuperficiales en materiales ferromagnéticos.</p>
+                            <a href="services/particulas-magneticas.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <picture>
+                            <source srcset="img/services/liquidos-penetrantes_large.webp" type="image/webp">
+                            <img src="img/services/liquidos-penetrantes_large.jpg" class="card-img-top" alt="Líquidos Penetrantes" loading="lazy">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Líquidos Penetrantes</h3>
+                            <p class="card-text">Método que permite detectar e identificar discontinuidades presentes en la superficie de los materiales.</p>
+                            <a href="services/liquidos-penetrantes.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <picture>
+                            <source srcset="img/services/inspeccion-visual_large.webp" type="image/webp">
+                            <img src="img/services/inspeccion-visual_large.jpg" class="card-img-top" alt="Inspección Visual" loading="lazy">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Inspección Visual</h3>
+                            <p class="card-text">Método fundamental para examinar la superficie de materiales y detectar defectos visibles.</p>
+                            <a href="services/inspeccion-visual.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <picture>
+                            <source srcset="img/services/calificacion-soldadores.webp" type="image/webp">
+                            <source srcset="img/services/calificacion-soldadores.jpg" type="image/jpeg">
+                            <img src="img/services/calificacion-soldadores.jpg" class="card-img-top" alt="Calificación de Soldadores" loading="lazy">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Calificación de Soldadores</h3>
+                            <p class="card-text">Evaluación y certificación de soldadores según normas internacionales.</p>
+                            <a href="services/calificacion-soldadores.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <picture>
+                            <source srcset="img/services/medicion-espesores.webp" type="image/webp">
+                            <source srcset="img/services/medicion-espesores.jpg" type="image/jpeg">
+                            <img src="img/services/medicion-espesores.jpg" class="card-img-top" alt="Medición de Espesores" loading="lazy">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Medición de Espesores</h3>
+                            <p class="card-text">Medición precisa de espesores en materiales mediante ultrasonido.</p>
+                            <a href="services/medicion-espesores.html" class="btn btn-outline-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="text-primary">Qué hacemos</h3>
+                <h2 class="display-5 mb-3">Inspeccionamos las obras del futuro</h2>
+                <p class="lead">Nos especializamos en una amplia gama de servicios de ensayos no destructivos para asegurar la integridad y seguridad de tus proyectos.</p>
+            </div>
+
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold"><span class="stat-number" data-target="100" data-suffix="%">0</span></h3>
+                        <p>Aprobación en controles de calidad</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold"><span class="stat-number" data-target="12" data-suffix="+">0</span></h3>
+                        <p>Proyectos certificados anualmente</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold"><span class="stat-number" data-target="99" data-suffix="%">0</span></h3>
+                        <p>De los clientes vuelven a utilizar nuestro servicio</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold"><span class="stat-number" data-target="128" data-suffix="+">0</span></h3>
+                        <p>Son nuestros clientes felices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="text-primary">Contacto</h3>
+                <h2 class="display-5">¿Necesitas nuestros servicios?</h2>
+                <p class="lead">Contáctanos para obtener más información sobre nuestros servicios o solicitar una cotización.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="contact-info">
+                                <div class="contact-info-item">
+                                    <i class="bi bi-telephone-fill text-primary fs-4"></i>
+                                    <div>
+                                        <h4 class="h5">Teléfono</h4>
+                                        <p class="mb-0">+56 9 5001 8652</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <i class="bi bi-envelope-fill text-primary fs-4"></i>
+                                    <div>
+                                        <h4 class="h5">Email</h4>
+                                        <p class="mb-0">contacto@ingetest.cl</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <i class="bi bi-clock-fill text-primary fs-4"></i>
+                                    <div>
+                                        <h4 class="h5">Horario de atención</h4>
+                                        <p class="mb-0">Lunes a Viernes<br>9:00 - 18:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="button-group flex-center">
+                                <a href="mailto:contacto@ingetest.cl" class="btn btn-primary">Enviar correo</a>
+                                <a href="tel:+56950018652" class="btn btn-outline-primary">Llamar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta py-5" style="background: linear-gradient(135deg, #FF7F41 0%, #ff6922 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4 font-weight-bold text-white" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">Construyamos algo juntos</h2>
+                    <p class="lead mb-4 text-white" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">No esperes más para asegurar la integridad y calidad de tus proyectos. Asóciate con nosotros y experimenta un servicio y calidad incomparables en ensayos no destructivos.</p>
+                    <a href="https://wa.me/56950018652" target="_blank" class="btn btn-success btn-lg px-5 py-3" style="font-size: 1.25rem;">
+                        <i class="bi bi-whatsapp me-2 fs-4"></i>Contáctanos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>Ingetest SpA</h4>
+                    <p>Empresa líder en servicios de Ensayos No Destructivos</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="mb-0">&copy; 2024 Ingetest SpA. Todos los derechos reservados.</p>
+                    <a href="faq.html" class="text-white text-decoration-none">Preguntas frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

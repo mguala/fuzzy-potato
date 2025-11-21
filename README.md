@@ -1,11 +1,13 @@
-# Sitio Web Empresarial de la empresa Ingetest
+# Sitio web empresarial
+publicado en ingetest.cl
 
 ## Stack tecnologico:
-HTML
-CSS
-Js
 
-**TO DO:
-[] Migrar CSS a bootstrap CDN
-[] Migrar js a javascript CDN
-[] Reemplazar fotos
+-HTML 
+-CSS 
+-Js
+
+## **TO DO**: 
+- [ ] Migrar CSS a bootstrap CDN 
+- [ ] Migrar js a javascript CDN
+- [ ] Reemplazar fotos

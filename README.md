@@ -1,11 +1,11 @@
 # Sitio web empresarial
-publicado en ingetest.cl
+publicado en [ingetest.cl](http://ingetest.cl)
 
 ## Stack tecnologico:
 
--HTML 
--CSS 
--Js
+- HTML 
+- CSS 
+- Js
 
 ## **TO DO**: 
 - [ ] Migrar CSS a bootstrap CDN 
